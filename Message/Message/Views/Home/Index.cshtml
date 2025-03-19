@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Chat</title>
+    <link rel="stylesheet" href="~/Content/styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        @*           Khung chat          *@
+        <div id="chatMessages" class="chat-messages"></div>
+        @*           Phần gửi tin nhắn          *@
+        <div id="inputArea" class="input-area" style="display: none;">
+            <input type="text" id="messageInput" placeholder="Type your message here...">
+            <button id="sendButton">Send</button>
+        </div>
+        @*           Nhập thông tin trước khi tham gia chat          *@
+        <div>
+            <input type="text" id="userName" placeholder="Your name" />
+            <input type="text" id="roomName" placeholder="Room name" />
+            <button id="submitButton">Join</button>
+        </div>
+    </div>
+
+    <script src="~/Scripts/Script.js"></script>
+</body>
+</html>
